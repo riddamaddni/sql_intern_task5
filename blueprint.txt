@@ -1,0 +1,34 @@
+Task 5 Summary 
+To provide a more comprehensive and challenging learning experience, I created a new, 6-table database for "PharmaPlus." This schema is more realistic and allows for a much wider variety of join queries.
+
+New Database Schema:
+
+Manufacturers: Stores producer info.
+
+Products: Linked to Manufacturers.
+
+SalesReps: Includes a self-referencing manager_id for hierarchical (self-join) queries.
+
+Customers: Stores pharmacy/hospital info.
+
+SalesOrders: The order "header," linking to Customers and SalesReps.
+
+OrderItems: The order "detail," linking to SalesOrders and Products.
+
+Query Guide
+
+I created a new SQL file (task_5_advanced_joins.sql) containing a "Mastery Guide" with over 30 query examples. This guide is structured to build skills progressively:
+
+Part 1: INNER JOIN: Starts with simple 2-table joins and builds up to complex 5-table reporting queries with GROUP BY.
+
+Part 2: LEFT JOIN: Focuses on finding missing data, with examples for all tables (e.g., unsold products, customers with no orders, reps with no sales).
+
+Part 3: RIGHT JOIN: Demonstrates the reverse of a LEFT JOIN.
+
+Part 4: FULL OUTER JOIN: Provides the UNION-based emulation required for MySQL/SQLite.
+
+Part 5: SELF JOIN: Shows how to query the SalesReps table against itself to build an employee/manager report.
+
+Part 6: CROSS JOIN & Advanced: Covers the Cartesian product, joining without foreign keys, and using joins with subqueries and HAVING clauses.
+
+This robust set of examples, built on a more complex schema, should thoroughly cover the objectives of the task and the concepts from the interview questions.
